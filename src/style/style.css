@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika");
+
+
+/* Letra para todo el tema */
+* {
+  font-family: 'Signika';
+}
+
+/* Titulo principal */
+h1 {
+  width: 700px;
+  font-size:160%;
+  text-align:center;
+  font-weight: bold;
+}
+
+.table{
+  height: 100px;
+}
+/* Slider de fecha */
+#selectYear{
+  width: 700px;
+  text-align: center;
+  scale: 1.3;
+}
+
+/* Contenedor principal */
+#contenedorPrincipal{
+  width: 1200px;
+  height: 700px;
+}
+
+/* Espacio para dibujar el mapa de CyL */
+#mapa{
+  width: 700px;
+  height: 400px;
+  float: inline-start;
+}
+
+/* Cuadrado donde aparece la información resumida de cada provincia */
+#infoResumen{
+  position: absolute;
+  width: 200px;
+  height: 90px;
+  background-color: white;
+  pointer-events: none;
+  border: solid black;
+  display: none;
+}
+
+/* Agrupa el selector de variables y la leyenda*/
+#variablesLeyenda{
+  width: 400px;
+  height: 220px;
+  float: inline-start;
+}
+
+/* Selector de variable */
+#selectVar{
+  height: 50px;
+  float:inline-start;
+  margin-left: 50px;
+  scale: 1.2;
+}
+
+/* Leyenda */
+#leyenda{
+  width: 300px;
+  height: 150px;
+  float:inline-end
+}
+
+
+/* Toda la información del gráfico de líneas */
+#lineChartCompleto{
+  width:500px;
+  height: 450px;
+  float:left;
+}
+
+/* GRAFICO DE LINEAS */
+#lineas{
+  width:500px;
+  height: 400px;
+  float:left;
+  display: none;
+}
+
+#titulo{
+  margin-left: 170px;
+  margin-top: 20px;
+
+}
+.grid line {
+stroke: lightgrey;
+stroke-opacity: 0.7;
+shape-rendering: crispEdges;
+
+}
+.grid path {
+stroke-width: 0;
+}
+.gridright line{
+  stroke:none;
+}
+
+/* CHECKBOX */
+#checkLineas{
+  display: none;
+  width: 600px;
+  height: 100px;
+  float: inline-end;
+  text-align: center;
+}
+
+/* Lista de selección de variables a mostrar en el gráfico de líneas*/
+#listaLineChartVariables{
+  list-style-type: none;
+  text-align: left;
+  margin-left: 100px;
+  float: left;
+}
+
+/* Lista para seleccionar la opción de grosor en el gráfico de líneas*/
+#listaLineChartGrosor{
+  list-style-type: none;
+  text-align: left;
+  float: right;
+  margin-right: 50px;
+}
+
+/* Titulos de la selección de variables en el gráfico de líneas*/
+#titleVarLineChart{
+  font-weight: bold;
+  font-size: 110%;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  width: 1200px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: black;
+}
+
+#footer p {
+  font-family:'Courier New';
+  font-size: 13px;
+  float: inline-end;
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+}
