@@ -7,6 +7,7 @@ Se han utilizado los datos correspondientes al dataset: [Indicadores medioambien
 
 Se han selecionado y transformado los indicadores de interés para nuestro objetivo hasta construir el [dataset](data/Indicadores_mediambientales_reduced.csv) utilizado.
 
+## Visualiación sobre el mapa
 Se puede observar la representación del mapa de CyL con una escala en tres colores de las diferentes variables por cada provincia y año:
 
 - Nº de incendios
@@ -17,6 +18,7 @@ Se puede variar de formar interactiva tanto la variable a representar como el a�
 
 ![Choropleth](Images/mapa_CyL.png "Visualización sobre el mapa")
 
+## Visualización temporal
 Al pulsar sobre una provincia, se accede a al visualización de la evolución temporal de las variables relacionadas con la precipitación y la superficie.
 Se puede incluir en la visualización temporal el número de incendios en forma del grosor de los puntos de la superficie incendiada.
 
