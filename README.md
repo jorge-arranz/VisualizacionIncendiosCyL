@@ -15,12 +15,12 @@ Se puede observar la representación del mapa de CyL con una escala en tres colo
 
 Se puede variar de formar interactiva tanto la variable a representar como el año.
 
-[](Images/mapa_CyL.png "Visualización sobre el mapa")
+![Choropleth](Images/mapa_CyL.png "Visualización sobre el mapa")
 
 Al pulsar sobre una provincia, se accede a al visualización de la evolución temporal de las variables relacionadas con la precipitación y la superficie.
 Se puede incluir en la visualización temporal el número de incendios en forma del grosor de los puntos de la superficie incendiada.
 
-[](Images/lineChart.png "Visualización temporal")
+![Line Chart](Images/lineChart.png "Visualización temporal")
 
 
 
