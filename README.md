@@ -1,8 +1,7 @@
  # Incendios forestales en CyL
 
- [Enlace a la visualización](https://desi_22-23.pages.gitlab.inf.uva.es/icendiossequia)
 
- 
+## Datos utilizados
 Se han utilizado los datos correspondientes al dataset: [Indicadores medioambientales de Castilla y León](http://datosabiertos.jcyl.es/web/jcyl/set/es/mediciones/indicadoresambientales/1284227444931), del [Portal de Datos Abiertos](https://datosabiertos.jcyl.es/) de la [Junta de Castilla y León](http://jcyl.es/).
 
 Se han selecionado y transformado los indicadores de interés para nuestro objetivo hasta construir el [dataset](data/Indicadores_mediambientales_reduced.csv) utilizado.
@@ -23,6 +22,9 @@ Al pulsar sobre una provincia, se accede a al visualización de la evolución te
 Se puede incluir en la visualización temporal el número de incendios en forma del grosor de los puntos de la superficie incendiada.
 
 ![Line Chart](Images/lineChart.png "Visualización temporal")
+
+## Resultado final
+ [Enlace a la visualización](https://desi_22-23.pages.gitlab.inf.uva.es/icendiossequia)
 
 
 
