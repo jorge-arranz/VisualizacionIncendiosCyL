@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01">
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <script src="https://d3js.org/d3.v6.min.js" charset="utf-8"></script>
+  
+  <script type="text/javascript" src="./src/js/choropleth-CyL.js"></script>  
+  <script type="text/javascript" src="./src/js/lineChart.js"></script>
+
+  
+  <script type="text/javascript" src="./src/js/handlers.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./src/style/style.css">
+
+  <title>Efecto de los incendios en CyL</title>
+
+</head>
+
+<body>
+  <h1> Castilla y León</h1>
+
+
+    <div id = 'selectYear'>
+      <div id='labelYear'> 
+        Año: <label id="selectedYear">2000</label>
+      </div>
+
+      <input type="range" id="years" min="2000" max="2016" value="2000" step="1" class="slider" oninput="handlerSliderYear()">
+    </div>
+
+    <div id="contenedorPrincipal">
+      <div id= 'mapa'></div>
+      <div id = "infoResumen"></div>
+
+      <div id="lineas"></div>
+
+      <div id="checkLineas">
+        <ul id="listaLineChartVariables">
+          <li>
+            <span id="titleVarLineChart"> Variables a representar</span>
+          </li>
+          <li>
+            <input id="sequia" name="indicador" onchange= "handlerCheck()" value="0" type="checkbox" checked/>
+            <span style="color: blue">Precipitacion normal</span>
+          </li>
+          <li>
+            <input id="superficie" name="indicador" onchange="handlerCheck()" value="1" type="checkbox" checked/>
+            <span style="color: rgb(177, 71, 0)">Superficie incendiada</span> 
+          </li>
+
+        </ul>
+
+        <ul id="listaLineChartGrosor">
+          <li>
+            <span id="titleVarLineChart">Grosor de los puntos</span>
+          </li>
+          <li>
+            <input id="incendio" name="indicadorInc" onchange="handlerCheck()" value="2" type="checkbox" ><span>Numero de incendios</span> 
+          </li>
+        </ul>
+      </div>
+
+
+      <div id="variablesLeyenda">
+        <div id = 'selectVar'>
+          <select name="selectVarList" id="vars" onchange="handlerListVar()" value="incendio">
+            <option value="incendio">Nº incendios</option>
+            <option value="sequia">Periodo de sequía</option>
+            <option value="superficie">Superficie total incendiada</option>
+              
+          </select>
+        </div>
+
+        <div id ='leyenda'></div>
+      </div>
+
+    </div>
+              
+         
+             
+
+
+
+  
+    <script>
+      // Rutas de datos
+      const MAP_DATA = "./src/GeoJson/provincias-CastillaYLeon.json";
+      const DATA_CSV = "./data/Indicadores_medioambientales_reduced.csv";
+      // Estado inicial
+      plotCyL(2000, 'incendio');
+    </script>
+
+    <footer id="footer">
+      
+      <p> Jorge Arranz Simón · 2022/2023 · Diseño y Evaluación de Sistemas Interactivos · UVa · Creado con <a
+        href="https://d3js.org/">D3.js</a></p>
+      <p>Se han utilizado los datos correspondientes al dataset: "<a
+              href="http://datosabiertos.jcyl.es/web/jcyl/set/es/mediciones/indicadoresambientales/1284227444931">Indicadores medioambientales de Castilla y León</a>"  
+              , del <a href="https://datosabiertos.jcyl.es/">Portal de Datos Abiertos</a> de la <a
+              href="http://jcyl.es/">Junta de Castilla y León</a></p>
+    </footer>
+
+</body>
+</html>
