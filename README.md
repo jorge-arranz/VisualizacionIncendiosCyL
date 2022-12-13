@@ -1,5 +1,10 @@
- # Incendios forestales en CyL - [Visualiación](https://desi_22-23.pages.gitlab.inf.uva.es/icendiossequia)
+# Incendios forestales en CyL - [Visualiación](https://desi_22-23.pages.gitlab.inf.uva.es/icendiossequia)
 
+## Objetivos 
+
+- Comparar los indicadores relacionados con el Nº de incendios forestales, la tasa de precipitación y la superficie incendiada entre las 9 provincias de Castilla y León. 
+
+- Comparar a lo largo de los años la evolución y relación que existe entre la tasa de precipitación y la superficie incendiada, añadiendo de manera opcional el número de incendios para comprobar si existe o no alguna correlación entre este indicadores y los demás.
 
 ## Datos utilizados
 Se han utilizado los datos correspondientes al dataset: [Indicadores medioambientales de Castilla y León](http://datosabiertos.jcyl.es/web/jcyl/set/es/mediciones/indicadoresambientales/1284227444931), del [Portal de Datos Abiertos](https://datosabiertos.jcyl.es/) de la [Junta de Castilla y León](http://jcyl.es/).
